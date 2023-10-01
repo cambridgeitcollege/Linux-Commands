@@ -1,138 +1,190 @@
-# Windows Command Prompt (CMD) Commands Guide
+# Linux Command Repository
 
 ## Introduction
+Welcome to the Linux Command Repository! This repository is a collection of Linux commands suitable for beginners and advanced users. Whether you are new to Linux or looking to expand your command-line knowledge, this resource is here to help you.
 
-Welcome to the Windows Command Prompt (CMD) Commands Guide! In this comprehensive guide, you'll find a vast collection of Windows CMD commands ranging from beginner to advanced levels. CMD is a powerful tool for interacting with your Windows operating system through a command-line interface.
-
-This guide is designed to help you learn and master the essential commands, making you more efficient in managing your Windows system. Whether you're a novice or an experienced user, you'll find valuable information here.
+### What is Linux?
+Linux is a popular open-source operating system known for its power, flexibility, and robust command-line interface. Learning how to use Linux commands is essential for efficient system administration, development, and automation tasks.
 
 ## Commands
+Below is a list of commonly used Linux commands categorized by their functionality. Each command is accompanied by a brief description of its purpose.
 
-### File and Directory Commands:
+## Disk Management
+- `fdisk`: Partition table manipulator.
+- `mkfs`: Create a file system.
+- `mount`: Mount a file system.
+- `umount`: Unmount a file system.
+- `df`: Display disk space usage.
+- `du`: Estimate file and directory space usage.
+- `fsck`: File system consistency check.
+- `badblocks`: Check for bad blocks on a disk.
 
-1. `dir` - List files and directories in the current directory.
-2. `cd` - Change the current directory.
-3. `mkdir` - Create a new directory.
-4. `rmdir` - Remove a directory.
-5. `copy` - Copy files or directories.
-6. `move` - Move files or directories.
-7. `del` - Delete files.
-8. `ren` - Rename files or directories.
-9. `type` - Display the contents of a text file.
-10. `find` - Search for a specific string in a file.
-11. `attrib` - Change file attributes.
-12. `tree` - Display directory structure as a tree.
-13. `xcopy` - Extended copy command with more options.
-14. `chkdsk` - Check and repair disk errors.
-15. `fc` - Compare two files or sets of files.
-16. `comp` - Compare the contents of two files.
-17. `robocopy` - Robust file and directory copying tool.
-18. `sfc` - System File Checker to repair corrupted system files.
-20. `findstr` - Search for specific strings in files.
-21. `more` - Display the contents of a text file one page at a time.
-22. `sort` - Sort the contents of a text file.
-23. `xcopy /e` - Copy directories and subdirectories, including empty ones.
-24. `compact` - Compress or decompress files on an NTFS partition.
-25. `xcaccls` - Backup and restore NTFS permissions.
-26. `subst` - Associate a drive letter with a directory.
-27. `deltree` - Delete a directory and its subdirectories.
-28. `cipher` - Display or alter file encryption on NTFS volumes.
-29. `fsutil` - File system utility for managing various file system settings.
-30. `openfiles` - Display or disconnect open shared files and folders.
+## Text Processing
+- `cat`: Concatenate and display file content.
+- `grep`: Search text using patterns.
+- `sed`: Stream editor for text manipulation.
+- `awk`: Text processing tool.
+- `sort`: Sort lines in text files.
+- `uniq`: Remove duplicate lines.
+- `cut`: Remove sections from lines.
+- `tr`: Translate or delete characters.
+- `wc`: Word, line, character, and byte count.
 
+## System Monitoring
+- `top` or `htop`: Display system and process information.
+- `vmstat`: Virtual memory statistics.
+- `iostat`: Input/output statistics.
+- `sar`: Collect and report system activity.
+- `ps`: List running processes.
+- `watch`: Execute a program periodically.
 
-### Network Commands:
+## File Transfer
+- `scp`: Securely copy files between hosts.
+- `rsync`: Synchronize files and directories.
+- `ftp`: File Transfer Protocol client.
+- `sftp`: Secure FTP client.
+- `ncftp`: Improved FTP client.
+- `curl`: Transfer data with URLs.
+- `wget`: Download files from the internet.
 
-30. `ipconfig` - Display network configuration information.
-31. `ping` - Test network connectivity.
-21. `tracert` - Trace the route to a remote host.
-22. `netstat` - Display network statistics.
-23. `nslookup` - Look up IP addresses and domain names.
-24. `hostname` - Display or set the computer's hostname.
-25. `arp` - Display and modify the ARP cache.
-26. `route` - Display or modify the routing table.
-27. `telnet` - Connect to remote hosts using Telnet.
-28. `ftp` - Transfer files to/from remote FTP servers.
-29. `net` - Manage network resources.
-31. `netsh` - Network Shell for configuring network-related settings.
-32. `net use` - Connect or disconnect a computer from shared resources.
-33. `net view` - Display a list of available network resources.
-34. `net share` - Create, delete, or manage shared folders.
-35. `net session` - View and manage network sessions.
-36. `net time` - Synchronize the computer's time with a network server.
-37. `netdom` - Domain-related management tool.
-38. `route print` - Display the routing table with more details.
-39. `nbtstat` - Display statistics and current connections using NetBIOS over TCP/IP.
-40. `ipconfig /flushdns` - Flush and reset the DNS resolver cache.
-41. `ipconfig /release` - Release the current DHCP configuration.
-42. `ipconfig /renew` - Renew the DHCP configuration.
-44. `netsh firewall` - Configure the Windows Firewall.
-45. `netstat -a` - Display all active network connections and listening ports.
+## File Permissions and Ownership
+- `chmod`: Change file permissions.
+- `chown`: Change file ownership.
+- `chgrp`: Change group ownership.
+- `umask`: Set default permissions.
+- `sudo`: Execute a command as another user.
+- `su`: Switch to another user.
+- `visudo`: Edit sudoers file.
 
+## System Configuration
+- `hostname`: Display or set the system's hostname.
+- `date`: Display or set the system date and time.
+- `timedatectl`: Control the system's time and date.
+- `locale`: Display or set the system locale.
+- `passwd`: Change user password.
+- `shutdown`: Shutdown or restart the system.
+- `reboot`: Reboot the system.
 
-### System Information and Management:
+## Network Configuration
+- `ifconfig` or `ip`: Configure network interfaces.
+- `route`: Display or modify the routing table.
+- `netstat`: Display network statistics.
+- `iptables`: Configure firewall rules (legacy).
+- `ufw`: Uncomplicated Firewall (UFW) management.
+- `firewalld`: Firewall management (systemd-based).
 
-55. `systeminfo` - Display detailed system information.
-56. `tasklist` - List running processes.
-32. `taskkill` - Terminate processes or applications.
-33. `msconfig` - System Configuration Utility.
-34. `regedit` - Registry Editor.
-35. `eventvwr` - Event Viewer.
-36. `services.msc` - Services management console.
-37. `shutdown` - Shut down or restart the computer.
-38. `gpupdate` - Update Group Policy settings.
-39. `ver` - Display the Windows version.
-40. `systeminfo` - Display detailed system information.
-46. `gpresult` - Display Group Policy settings for the current user.
-47. `powercfg` - Configure power management settings.
-48. `bcdedit` - Boot Configuration Data Editor for managing boot options.
-49. `dxdiag` - DirectX Diagnostic Tool for troubleshooting DirectX issues.
-50. `driverquery` - List installed device drivers.
-51. `msinfo32` - System Information utility.
-52. `mmc` - Microsoft Management Console for creating custom management tools.
-53. `taskmgr` - Task Manager for managing running processes.
-54. `perfmon` - Performance Monitor for system monitoring.
-55. `wmic` - Windows Management Instrumentation Command-line tool.
-56. `schtasks` - Schedule tasks to run at specific times or events.
+## Text Editors
+- `nano`: Simple text editor.
+- `vim` or `vi`: Powerful text editor.
+- `emacs`: Extensible text editor.
+- `gedit`: GNOME text editor.
+- `kate`: KDE text editor.
+- `sublime-text`: Sublime Text editor.
 
+## Disk Usage Analysis
+- `du`: Estimate file and directory space usage.
+- `ncdu`: NCurses Disk Usage - interactive disk usage analyzer.
+- `df`: Display disk space usage.
+- `baobab`: GNOME Disk Usage Analyzer.
 
+## Archive Management
+- `tar`: Create and extract tar archives.
+- `gzip` or `gunzip`: Compress and decompress files.
+- `bzip2` or `bunzip2`: Compress and decompress files.
+- `zip` or `unzip`: Create and extract zip archives.
+- `rar` or `unrar`: Create and extract rar archives.
+- `7z` or `7za`: Create and extract 7z archives.
+- `xz` or `unxz`: Compress and decompress files with LZMA algorithm.
+- `ar` or `tar`: Archive manipulation.
 
-### User Account Management:
+## User Management
+- `useradd`: Add a new user.
+- `userdel`: Delete a user.
+- `usermod`: Modify user settings.
+- `passwd`: Change user password.
+- `groupadd`: Add a new group.
+- `groupdel`: Delete a group.
+- `groups`: Display groups a user belongs to.
+- `id`: Display user and group information.
 
-77. `net user` - Manage user accounts.
-78. `net group` - Manage user groups.
-79. `net localgroup` - Manage local groups.
-80. `whoami` - Display the current user.
-81. `runas` - Run a program as another user.
-82. `control userpasswords2` - User Accounts control panel.
+## Network Troubleshooting
+- `ping`: Send ICMP echo requests.
+- `traceroute`: Trace the route to a host.
+- `netstat`: Display network statistics.
+- `dig`: DNS lookup utility.
+- `nslookup`: Query DNS records.
+- `host`: DNS lookup tool.
+- `ifconfig`: Configure network interfaces.
 
-### Disk and Storage Management:
+## System Backup and Restore
+- `tar`: Create and extract backups.
+- `rsync`: Synchronize files and directories.
+- `dd`: Copy and convert files.
+- `dump` and `restore`: Backup and restore filesystems.
 
-83. `diskpart` - Disk Partitioning tool.
-84. `format` - Format a disk drive.
-85. `defrag` - Defragment disk drives.
-86. `diskmgmt.msc` - Disk Management console.
-87. `cleanmgr` - Disk Cleanup utility.
+## Package Management
+- `apt-get`: Debian/Ubuntu package manager.
+- `apt`: Advanced package tool (Debian/Ubuntu).
+- `yum` or `dnf`: CentOS/Fedora package manager.
+- `rpm`: RPM package manager (Red Hat).
+- `dpkg`: Debian package manager.
+- `zypper`: OpenSUSE package manager.
+- `snap`: Snap package manager (Ubuntu).
 
-### Miscellaneous Commands:
+## System Logging
+- `journalctl`: Query the systemd journal.
+- `syslog`: System log daemon.
+- `logrotate`: Log rotation utility.
+- `dmesg`: Display kernel messages.
+- `tail`: Display the end of log files.
 
-88. `cls` - Clear the screen.
-89. `echo` - Display text on the screen.
-90. `date` - Display or set the system date.
-91. `time` - Display or set the system time.
-56. `help` - Get help on commands.
-57. `color` - Change the console text and background color.
-58. `assoc` - Display or modify file extension associations.
-59. `shutdown` - Shutdown or restart the computer.
-57. `shutdown /s` - Shutdown the computer (immediate).
-58. `shutdown /r` - Restart the computer (immediate).
-59. `shutdown /h` - Hibernate the computer (if supported).
+## System Information
+- `uname`: Display system information.
+- `lsb_release`: Display Linux Standard Base information.
+- `lscpu`: Display CPU information.
+- `lsblk`: List block devices.
+- `lshw`: List hardware information.
+- `inxi`: Display system information.
 
-### Contribution
+## Shell Scripting
+- `echo`: Display text.
+- `if`: Conditional statements.
+- `for`: Looping constructs.
+- `while`: Looping constructs.
+- `case`: Evaluate conditional cases.
+- `grep`: Search text using patterns.
+- `sed`: Stream editor for text manipulation.
+- `awk`: Text processing tool.
+- `cut`: Remove sections from lines.
+- `tee`: Redirect output to files and pipes.
+- `xargs`: Build and execute command lines from input.
+
+## Disk Management
+- `fdisk`: Partition table manipulator.
+- `gdisk` or `parted`: GUID Partition Table (GPT) tools.
+- `mkfs`: Create a file system.
+- `fsck`: File system consistency check.
+- `mount`: Mount a file system.
+- `umount`: Unmount a file system.
+- `blkid`: Display block device attributes.
+- `swapon` and `swapoff`: Enable and disable swap space.
+
+## File Searching
+- `find`: Search for files and directories.
+- `locate`: Quickly find files by name.
+- `which`: Display the path to an executable.
+- `whereis`: Locate binary, source, and manual page files.
+- `grep`: Search text using patterns.
+
+Please note that this list is not exhaustive, and Linux commands have various options and arguments. It's essential to consult the command's [manual page](https://www.linux.org/forums/linux-beginner-tutorials.123) for detailed information and usage.
+
+## Contribution
 We welcome contributions! If you'd like to contribute to this project, please check out our [Contribution Guidelines](Contribution.md).
 
-### Code of Conduct
+## Code of Conduct
 Please review our [Code of Conduct](CodeOfConduct.md) before participating in this project.
 
 ## License
 This project is licensed under the [License](LICENSE).
+
+Happy Linux command-line learning!
